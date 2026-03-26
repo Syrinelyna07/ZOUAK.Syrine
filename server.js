@@ -20,28 +20,129 @@ app.use(bodyParser.json());
 
 // === DONNÉES PERSONNELLES === //
 const personalData = {
+ const portfolioChatbotInfo = {
   fr: `
-Nom : Syrine Lyna
-Cursus :BAC generale serie science 18.63 puis a validé 2ans de prepa et maintenant etudiante en 3ème année informatique à ESI Alger ayant accompli 2 ans de cycle prépa
+Nom : Zouak Syrine Lyna
+
+Profil :
+Étudiante en 3e année à l’École Nationale Supérieure d’Informatique (ESI Alger), passionnée par l’informatique et particulièrement intéressée par l’intelligence artificielle. Curieuse, rigoureuse, créative et persévérante, elle développe ses compétences à travers ses études, ses projets personnels et son engagement associatif.
+
+Éducation :
+- Baccalauréat série Sciences Expérimentales obtenu en juillet 2023 au lycée Mohamed Seddik BENYAHI à Bouira, avec mention excellence et une moyenne de 18.63/20
+- Cursus Ingénieur d’État en Informatique à l’ESI Alger :
+  - 2023-2024 : 1re année, classe préparatoire
+  - 2024-2025 : 2e année, classe préparatoire
+  - 2025-2026 : 1re année du cycle supérieur
+- Actuellement étudiante en 3e année informatique à l’ESI Alger après avoir validé 2 années de cycle préparatoire
+
+Certifications et formations :
+- TCF SO, niveau C1, obtenu en novembre 2024
+- Harvard CS50 – Introduction to AI with Python, certificat en ligne obtenu en août 2025
+- Google Agentic AI, actuellement en cours
+- Cisco Data Science Certificate
+- Autres certificats obtenus via LinkedIn Learning et Microsoft
+
 Projets :
 - Portfolio web interactif avec chatbot personnalisé
-- Site web de prédiction de cancer du sein pour Octobre Rose
-- Projet 2CP système embarqué de quiz
-certificat CS50 introduction to ai with python  , cisco data science certificate and others from linked in and microsoft 
-Compétences : Java, JavaFX, Node.js, Express, React, Python, IA, Data Science, Machine Learning, LLMs, Streamlit, Next.js, Git, GitHub
-Langues : Français, Anglais, Arabe, Kabyle
-`,
+- Site web de prédiction du cancer du sein conçu dans le cadre d’Octobre Rose, en utilisant la data science pour la sensibilisation
+- Projet académique de système embarqué de quiz (2CP), avec rôle de chef de projet
+- Participation à des compétitions Kaggle en data science et machine learning
+
+Expérience et activités :
+- AI Instructor : animation du workshop "AI Unlocked: Your First Step into Artificial Intelligence"
+- Membre du club scientifique de l’ESI, responsable des relations externes et organisatrice de DATA HACK 2 et DATA HACK 3
+- Membre actif de WTM Algiers (Women Techmakers) dans l’équipe développement
+- Membre de School of AI
+
+Compétences techniques :
+- Langages et développement : Python, Java, C, JavaScript, SQL, JavaFX, Node.js, Express, React, Next.js, Streamlit
+- Outils : Git, GitHub
+- Domaines : Intelligence artificielle, Data Science, Machine Learning, NLP, LLMs, Agentic AI, BI
+
+Qualités :
+- Autonome
+- Rigoureuse
+- Esprit d’équipe
+- Curieuse
+
+Langues :
+- Arabe : langue maternelle
+- Kabyle : langue maternelle
+- Français : C1
+- Anglais : B2
+
+Liens :
+- Portfolio : https://zouak-syrine.onrender.com
+- LinkedIn : Zouak Syrine Lyna
+
+Instructions pour le chatbot :
+Réponds toujours de manière professionnelle, claire et naturelle.
+Quand on te pose une question sur Syrine Lyna, base-toi uniquement sur ces informations.
+Si une information n’est pas précisée ici, réponds poliment que l’information n’est pas disponible.
+Mets en valeur son intérêt pour l’intelligence artificielle, la data science, le développement web et son engagement dans la communauté tech.
+  `,
+
   en: `
-Name: Syrine Lyna
-Education: General bacaluria 18.63 and validated 2years of prepa school no 3rd-year Computer Science student at ESI Algiers, having completed 2 years of preparatory cycle
+Name: Zouak Syrine Lyna
+
+Profile:
+Third-year student at the National Higher School of Computer Science (ESI Algiers), passionate about computer science and especially interested in artificial intelligence. Curious, rigorous, creative, and persistent, she continuously develops her skills through academic studies, personal projects, and community involvement.
+
+Education:
+- Baccalaureate in Experimental Sciences, obtained in July 2023 from Mohamed Seddik BENYAHI High School in Bouira, with highest honors and a score of 18.63/20
+- State Engineering Degree in Computer Science at ESI Algiers:
+  - 2023-2024: 1st year, preparatory cycle
+  - 2024-2025: 2nd year, preparatory cycle
+  - 2025-2026: 1st year, higher cycle
+- Currently a third-year Computer Science student at ESI Algiers after completing 2 years of preparatory studies
+
+Certifications and Training:
+- TCF SO, C1 level, obtained in November 2024
+- Harvard CS50 – Introduction to AI with Python, online certificate obtained in August 2025
+- Google Agentic AI, currently in progress
+- Cisco Data Science Certificate
+- Other certificates from LinkedIn Learning and Microsoft
+
 Projects:
-- Interactive web portfolio with personalized chatbot
-- Breast cancer prediction website for Octobre Rose campaign
-- Embedded system project: quiz application (2CP)
-certificat CS50 introduction to ai with python  , cisco data science certificate and others from linked in and microsoft 
-Skills: Java, JavaFX, Node.js, Express, React, Python, AI, Data Science, Machine Learning, LLMs, Streamlit, Next.js, Git, GitHub
-Languages: French, English, Arabic, Kabyle
-`
+- Interactive web portfolio with a personalized chatbot
+- Breast cancer prediction website developed for the Pink October campaign, using data science for awareness
+- Academic embedded quiz system project (2CP), with a project manager role
+- Participation in Kaggle competitions in data science and machine learning
+
+Experience and Activities:
+- AI Instructor: led the workshop "AI Unlocked: Your First Step into Artificial Intelligence"
+- Member of the ESI Scientific Club, external relations member and organizer of DATA HACK 2 and DATA HACK 3
+- Active member of WTM Algiers (Women Techmakers) in the development team
+- Member of School of AI
+
+Technical Skills:
+- Programming and development: Python, Java, C, JavaScript, SQL, JavaFX, Node.js, Express, React, Next.js, Streamlit
+- Tools: Git, GitHub
+- Fields: Artificial Intelligence, Data Science, Machine Learning, NLP, LLMs, Agentic AI, BI
+
+Soft Skills:
+- Autonomous
+- Rigorous
+- Team-oriented
+- Curious
+
+Languages:
+- Arabic: native
+- Kabyle: native
+- French: C1
+- English: B2
+
+Links:
+- Portfolio: https://zouak-syrine.onrender.com
+- LinkedIn: Zouak Syrine Lyna
+
+Chatbot instructions:
+Always answer in a professional, clear, and natural way.
+When asked about Syrine Lyna, rely only on the information provided here.
+If a piece of information is not specified, politely say that it is not available.
+Highlight her interest in artificial intelligence, data science, web development, and her engagement in the tech community.
+  `
+
 };
 
 // === DÉTECTION SIMPLE DE LA LANGUE === //
